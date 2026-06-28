@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Whiskers Cafe</title>
+  <meta name="description" content="Get in touch with Whiskers Cafe in Manchester. Find our address, phone number, email and opening hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-alt2.css" />
+</head>
+<body>
+<button class="hamburger" id="hamburger" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <div class="sidebar-brand"><a href="index.html"><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" /></a><div class="sidebar-brand-name">Whiskers <span>Cafe</span></div><div class="sidebar-tagline">Coffee &bull; Cats &bull; Comfort</div></div>
+  <div class="sidebar-nav">
+    <a href="index.html"><span class="nav-dot"></span> Home</a>
+    <a href="cats-alt2.html"><span class="nav-dot"></span> Our Cats</a>
+    <a href="menu-alt2.html"><span class="nav-dot"></span> Menu &amp; Pricing</a>
+    <a href="gallery-alt2.html"><span class="nav-dot"></span> Gallery</a>
+    <a href="rules-alt2.html"><span class="nav-dot"></span> Care &amp; Rules</a>
+    <a href="contact-alt2.html" class="active" aria-current="page"><span class="nav-dot"></span> Contact</a>
+  </div>
+  <div class="sidebar-book"><a href="booking-alt2.html">Book a Visit</a></div>
+  <div class="sidebar-hours"><h5>Opening Hours</h5><p>Mon – Fri: 9am to 7pm</p><p>Saturday: 9am to 8pm</p><p>Sunday: 10am to 6pm</p></div>
+</nav>
+<div class="page-wrap">
+<main>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Got a question? We would love to hear from you. Drop us a message or come and visit!</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="contactHeading">
+    <div class="container">
+      <div class="contact-layout">
+        <div>
+          <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-row"><span class="contact-label">Address</span><span>42 Whisker Lane, Manchester, M1 1WC</span></div>
+            <div class="contact-row"><span class="contact-label">Phone</span><span><a href="tel:01612345678">0161 234 5678</a></span></div>
+            <div class="contact-row"><span class="contact-label">Email</span><span><a href="mailto:hello@whiskerscafe.co.uk">hello@whiskerscafe.co.uk</a></span></div>
+            <div class="contact-row"><span class="contact-label">Getting here</span><span>5 minute walk from Manchester Piccadilly station</span></div>
+            <div style="margin-top:1.2rem;border-radius:8px;overflow:hidden;border:1px solid var(--beige);">
+              <iframe title="Map showing Whiskers Cafe location near Piccadilly Gardens, Manchester" width="100%" height="240" style="border:0;display:block;" loading="lazy" allowfullscreen src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2420%2C53.4770%2C-2.2320%2C53.4820&amp;layer=mapnik&amp;marker=53.4795%2C-2.2370"></iframe>
+              <a href="https://www.openstreetmap.org/?mlat=53.4795&amp;mlon=-2.2370#map=16/53.4795/-2.2370" target="_blank" rel="noopener" style="display:block;text-align:center;font-size:0.74rem;padding:0.35rem;background:var(--cream);color:var(--text-light);">View larger map on OpenStreetMap</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Opening Hours</h3>
+            <table class="hours-table" aria-label="Cafe opening hours">
+              <tbody>
+                <tr><td>Monday to Friday</td><td>9:00am to 7:00pm</td></tr>
+                <tr><td>Saturday</td><td>9:00am to 8:00pm</td></tr>
+                <tr><td>Sunday</td><td>10:00am to 6:00pm</td></tr>
+                <tr><td>Bank Holidays</td><td>10:00am to 5:00pm</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <h2 id="contactHeading">Send Us a Message</h2>
+          <p>Fill in the form below and we will get back to you within 48 hours.</p>
+          <form id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group"><label for="cname">Your Name <span class="req" aria-hidden="true">*</span></label><input type="text" id="cname" name="cname" class="form-control" placeholder="e.g. Jane Smith" autocomplete="name" required aria-required="true" aria-describedby="cnameErr" /><span class="err-msg" id="cnameErr" role="alert"></span></div>
+            <div class="form-group"><label for="cemail">Email Address <span class="req" aria-hidden="true">*</span></label><input type="email" id="cemail" name="cemail" class="form-control" placeholder="e.g. jane@email.com" autocomplete="email" required aria-required="true" aria-describedby="cemailErr" /><span class="err-msg" id="cemailErr" role="alert"></span></div>
+            <div class="form-group"><label for="subject">Subject <span class="req" aria-hidden="true">*</span></label><select id="subject" name="subject" class="form-control" required aria-required="true" aria-describedby="subjectErr"><option value="">Choose a topic</option><option value="general">General enquiry</option><option value="booking">Booking question</option><option value="adoption">Adoption enquiry</option><option value="feedback">Feedback</option><option value="other">Other</option></select><span class="err-msg" id="subjectErr" role="alert"></span></div>
+            <div class="form-group"><label for="message">Message <span class="req" aria-hidden="true">*</span></label><textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message here..." required aria-required="true" aria-describedby="messageErr"></textarea><span class="err-msg" id="messageErr" role="alert"></span></div>
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width:100%;font-size:1rem;padding:0.75rem;">Send Message</button>
+            <div class="success-box" id="contactSuccess" role="alert" tabindex="-1"><h3>Message Sent!</h3><p>Thanks for getting in touch. We will reply within 48 hours.</p></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" class="footer-logo" /><p>Manchester's friendliest cat cafe. We support rescue cats and help them find loving homes.</p><p style="margin-top:0.6rem;">42 Whisker Lane, Manchester, M1 1WC<br>0161 234 5678<br>hello@whiskerscafe.co.uk</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="cats-alt2.html">Our Cats</a></li><li><a href="menu-alt2.html">Menu &amp; Pricing</a></li><li><a href="gallery-alt2.html">Gallery</a></li><li><a href="booking-alt2.html">Book a Visit</a></li><li><a href="rules-alt2.html">Care &amp; Rules</a></li><li><a href="contact-alt2.html">Contact</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul><li>Monday - Friday: 9am to 7pm</li><li>Saturday: 9am to 8pm</li><li>Sunday: 10am to 6pm</li><li>Bank Holidays: 10am to 5pm</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Whiskers Cafe. All rights reserved.</span><span>BTEC Level 3 Computing &mdash; Made by Illia</span></div>
+  </div>
+</footer>
+</div>
+<script src="script-alt2.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  function checkContactField(field) {
+    var value = field.value.trim(), id = field.id, errBox = document.getElementById(id + 'Err'), msg = '';
+    if (field.hasAttribute('required') && value === '') msg = 'This field is required.';
+    if (!msg && id === 'cemail' && value !== '') { if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) msg = 'Please enter a valid email address.'; }
+    if (msg) { field.classList.add('is-error'); if (errBox) { errBox.textContent = msg; errBox.classList.add('show'); } return false; }
+    else { field.classList.remove('is-error'); if (errBox) errBox.classList.remove('show'); return true; }
+  }
+  form.querySelectorAll('.form-control').forEach(function(field) { field.addEventListener('blur', function() { checkContactField(field); }); });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var allOk = true;
+    form.querySelectorAll('.form-control').forEach(function(field) { if (!checkContactField(field)) allOk = false; });
+    if (allOk) { document.getElementById('contactSuccess').classList.add('show'); document.getElementById('contactSubmitBtn').textContent = 'Message Sent!'; document.getElementById('contactSubmitBtn').disabled = true; form.reset(); }
+    else { var firstErr = form.querySelector('.is-error'); if (firstErr) firstErr.focus(); }
+  });
+});
+</script>
+</body>
+</html>
