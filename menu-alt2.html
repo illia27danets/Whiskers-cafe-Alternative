@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu and Pricing - Whiskers Cafe</title>
+  <meta name="description" content="See the full food and drinks menu at Whiskers Cafe, plus visit pricing and adoption fees." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-alt2.css" />
+</head>
+<body>
+<button class="hamburger" id="hamburger" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <div class="sidebar-brand"><a href="index.html"><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" /></a><div class="sidebar-brand-name">Whiskers <span>Cafe</span></div><div class="sidebar-tagline">Coffee &bull; Cats &bull; Comfort</div></div>
+  <div class="sidebar-nav">
+    <a href="index.html"><span class="nav-dot"></span> Home</a>
+    <a href="cats-alt2.html"><span class="nav-dot"></span> Our Cats</a>
+    <a href="menu-alt2.html" class="active" aria-current="page"><span class="nav-dot"></span> Menu &amp; Pricing</a>
+    <a href="gallery-alt2.html"><span class="nav-dot"></span> Gallery</a>
+    <a href="rules-alt2.html"><span class="nav-dot"></span> Care &amp; Rules</a>
+    <a href="contact-alt2.html"><span class="nav-dot"></span> Contact</a>
+  </div>
+  <div class="sidebar-book"><a href="booking-alt2.html">Book a Visit</a></div>
+  <div class="sidebar-hours"><h5>Opening Hours</h5><p>Mon – Fri: 9am to 7pm</p><p>Saturday: 9am to 8pm</p><p>Sunday: 10am to 6pm</p></div>
+</nav>
+<div class="page-wrap">
+<main>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Menu &amp; Pricing</h1>
+      <p>Fresh food, great coffee, and lovely company — all in one place.</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="menuHeading">
+    <div class="container">
+      <h2 class="section-title" id="menuHeading">Our Menu</h2>
+      <p class="section-sub">Select a tab to browse each section</p>
+
+      <div class="tab-btns" role="tablist" aria-label="Menu sections">
+        <button class="tab-btn active" data-tab="tab-food" role="tab" aria-selected="true">Food</button>
+        <button class="tab-btn" data-tab="tab-drinks" role="tab" aria-selected="false">Drinks</button>
+        <button class="tab-btn" data-tab="tab-pricing" role="tab" aria-selected="false">Visit Pricing</button>
+        <button class="tab-btn" data-tab="tab-adopt" role="tab" aria-selected="false">Adoption Fees</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-food" role="tabpanel" aria-label="Food menu">
+        <table class="menu-table" aria-label="Food items and prices">
+          <thead><tr><th scope="col">Item</th><th scope="col">Description</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td class="item-name">Club Sandwich</td><td><span class="item-desc">Chicken, bacon, lettuce and tomato on toasted sourdough bread</span></td><td class="item-price">&pound;8.50</td></tr>
+            <tr><td class="item-name">Cheese Toastie</td><td><span class="item-desc">Cheddar cheese and caramelised onion on thick white bread</span></td><td class="item-price">&pound;6.00</td></tr>
+            <tr><td class="item-name">Garden Salad Bowl</td><td><span class="item-desc">Mixed leaves, cherry tomatoes, feta cheese, seeds and honey dressing</span></td><td class="item-price">&pound;7.50</td></tr>
+            <tr><td class="item-name">Eggs Benedict</td><td><span class="item-desc">Poached eggs and smoked salmon on an English muffin with hollandaise sauce</span></td><td class="item-price">&pound;9.50</td></tr>
+            <tr><td class="item-name">Butter Croissant</td><td><span class="item-desc">Freshly baked, served with jam and butter</span></td><td class="item-price">&pound;3.50</td></tr>
+            <tr><td class="item-name">Carrot Cake</td><td><span class="item-desc">Homemade slice with cream cheese frosting and walnut topping</span></td><td class="item-price">&pound;4.50</td></tr>
+            <tr><td class="item-name">Cat Cupcake</td><td><span class="item-desc">Vanilla cupcake with buttercream and a cute cat decoration on top</span></td><td class="item-price">&pound;3.50</td></tr>
+            <tr><td class="item-name">Granola Bowl</td><td><span class="item-desc">Greek yoghurt, fresh berries, honey and our homemade granola</span></td><td class="item-price">&pound;6.00</td></tr>
+            <tr><td class="item-name">Belgian Waffles</td><td><span class="item-desc">Fluffy waffles with maple syrup, strawberries and cream</span></td><td class="item-price">&pound;8.00</td></tr>
+            <tr><td class="item-name">Soup of the Day</td><td><span class="item-desc">Freshly made soup — ask a member of staff for todays choice. Served with bread</span></td><td class="item-price">&pound;5.50</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-light);text-align:center;">Vegetarian and vegan options available. Please let us know about any allergies.</p>
+      </div>
+
+      <div class="tab-panel" id="tab-drinks" role="tabpanel" aria-label="Drinks menu">
+        <table class="menu-table" aria-label="Drinks and prices">
+          <thead><tr><th scope="col">Drink</th><th scope="col">Description</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td class="item-name">Flat White</td><td><span class="item-desc">Double espresso with smooth steamed milk</span></td><td class="item-price">&pound;3.20</td></tr>
+            <tr><td class="item-name">Cappuccino</td><td><span class="item-desc">Espresso, steamed milk and a thick foam top</span></td><td class="item-price">&pound;3.50</td></tr>
+            <tr><td class="item-name">Iced Latte</td><td><span class="item-desc">Cold espresso with your choice of milk poured over ice</span></td><td class="item-price">&pound;4.00</td></tr>
+            <tr><td class="item-name">Matcha Latte</td><td><span class="item-desc">Quality matcha powder with steamed oat milk</span></td><td class="item-price">&pound;4.20</td></tr>
+            <tr><td class="item-name">Hot Chocolate</td><td><span class="item-desc">Rich Belgian chocolate with steamed milk and marshmallows</span></td><td class="item-price">&pound;4.00</td></tr>
+            <tr><td class="item-name">Loose Leaf Tea</td><td><span class="item-desc">Choose from English Breakfast, Earl Grey, Chamomile or Green Tea</span></td><td class="item-price">&pound;2.80</td></tr>
+            <tr><td class="item-name">Berry Smoothie</td><td><span class="item-desc">Blended strawberry, raspberry, banana and oat milk</span></td><td class="item-price">&pound;5.00</td></tr>
+            <tr><td class="item-name">Orange Juice</td><td><span class="item-desc">Freshly squeezed orange juice served with ice</span></td><td class="item-price">&pound;3.50</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-light);text-align:center;">All drinks can be made with whole, semi-skimmed, oat, soy, almond or coconut milk. Alternative milks 30p extra.</p>
+      </div>
+
+      <div class="tab-panel" id="tab-pricing" role="tabpanel" aria-label="Visit pricing">
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Drop-In</h3>
+            <div class="price-amount">&pound;5 <small>per person</small></div>
+            <span class="price-label">No booking needed</span>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>45 minute session</li>
+              <li>Access to cat areas</li>
+              <li>Welcome drink included</li>
+            </ul>
+          </div>
+          <div class="pricing-card highlight">
+            <h3>Standard Visit</h3>
+            <div class="price-amount">&pound;8 <small>per person</small></div>
+            <span class="price-label">Most popular option</span>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>90 minute session</li>
+              <li>Access to all cat areas</li>
+              <li>Welcome drink included</li>
+              <li>Cat treats to give out</li>
+              <li>Priority booking</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Premium Visit</h3>
+            <div class="price-amount">&pound;14 <small>per person</small></div>
+            <span class="price-label">Best for cat lovers</span>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>2.5 hour session</li>
+              <li>Private play area access</li>
+              <li>Drink and snack included</li>
+              <li>Cat treats to give out</li>
+              <li>Guided introduction to cats</li>
+              <li>Souvenir paw-print card</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Children</h3>
+            <div class="price-amount">Half price</div>
+            <span class="price-label">Ages 4 to 12</span>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>50% off any session</li>
+              <li>Under 4s get in free</li>
+              <li>Must be with an adult</li>
+              <li>Kids welcome pack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-adopt" role="tabpanel" aria-label="Adoption fees">
+        <table class="menu-table" aria-label="Cat adoption fees">
+          <thead><tr><th scope="col">Category</th><th scope="col">Whats Included</th><th scope="col">Fee</th></tr></thead>
+          <tbody>
+            <tr><td class="item-name">Kitten (under 12 months)</td><td><span class="item-desc">Vaccinations, microchip, neutering and 4 weeks pet insurance</span></td><td class="item-price">&pound;95</td></tr>
+            <tr><td class="item-name">Adult Cat (1 to 7 years)</td><td><span class="item-desc">Vaccinations, microchip, neutering and 4 weeks pet insurance</span></td><td class="item-price">&pound;65 – &pound;95</td></tr>
+            <tr><td class="item-name">Senior Cat (8 years or older)</td><td><span class="item-desc">Vaccinations, microchip, neutering and 4 weeks pet insurance</span></td><td class="item-price">&pound;50</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-light);text-align:center;">All fees go towards the care of our rescue cats. For more info email adopt@whiskerscafe.co.uk</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-strip"><div class="container"><h2>Fancy Visiting?</h2><p style="margin-bottom:1.2rem;">Book your table online and enjoy our menu with the cats!</p><a href="booking-alt2.html" class="btn btn-white">Book a Table</a></div></div>
+
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" class="footer-logo" /><p>Manchester's friendliest cat cafe. We support rescue cats and help them find loving homes.</p><p style="margin-top:0.6rem;">42 Whisker Lane, Manchester, M1 1WC<br>0161 234 5678<br>hello@whiskerscafe.co.uk</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="cats-alt2.html">Our Cats</a></li><li><a href="menu-alt2.html">Menu &amp; Pricing</a></li><li><a href="gallery-alt2.html">Gallery</a></li><li><a href="booking-alt2.html">Book a Visit</a></li><li><a href="rules-alt2.html">Care &amp; Rules</a></li><li><a href="contact-alt2.html">Contact</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul><li>Monday - Friday: 9am to 7pm</li><li>Saturday: 9am to 8pm</li><li>Sunday: 10am to 6pm</li><li>Bank Holidays: 10am to 5pm</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Whiskers Cafe. All rights reserved.</span><span>BTEC Level 3 Computing &mdash; Made by Illia</span></div>
+  </div>
+</footer>
+</div>
+<script src="script-alt.js"></script>
+</body>
+</html>

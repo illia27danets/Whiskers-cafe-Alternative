@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Visit - Whiskers Cafe</title>
+  <meta name="description" content="Book a visit to Whiskers Cafe in Manchester. Choose your date, time and session type online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-alt2.css" />
+</head>
+<body>
+
+<button class="hamburger" id="hamburger" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu">
+  <span></span><span></span><span></span>
+</button>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <div class="sidebar-brand">
+    <a href="index.html" aria-label="Go to Whiskers Cafe home page">
+      <img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" />
+    </a>
+    <div class="sidebar-brand-name">Whiskers <span>Cafe</span></div>
+    <div class="sidebar-tagline">Coffee &bull; Cats &bull; Comfort</div>
+  </div>
+  <div class="sidebar-nav">
+    <a href="index.html"><span class="nav-icon"></span> Home</a>
+    <a href="cats-alt2.html"><span class="nav-icon"></span> Our Cats</a>
+    <a href="menu-alt2.html"><span class="nav-icon"></span> Menu &amp; Pricing</a>
+    <a href="gallery-alt2.html"><span class="nav-icon"></span> Gallery</a>
+    <a href="rules-alt2.html"><span class="nav-icon"></span> Care &amp; Rules</a>
+    <a href="contact-alt2.html"><span class="nav-icon"></span> Contact</a>
+  </div>
+  <div class="sidebar-book"><a href="booking-alt2.html" style="background: #b96c28;">Book a Visit</a></div>
+  <div class="sidebar-hours">
+    <h5>Opening Hours</h5>
+    <p>Mon–Fri: 9am – 7pm</p>
+    <p>Saturday: 9am – 8pm</p>
+    <p>Sunday: 10am – 6pm</p>
+  </div>
+</nav>
+
+<div class="page-wrap">
+<main>
+
+  <header class="page-header">
+    <h1>Book Your Visit</h1>
+    <p>Fill in the form below and we will confirm your booking within 24 hours.</p>
+  </header>
+
+  <section class="section" aria-labelledby="bookingHeading">
+    <div class="container">
+      <div class="booking-wrap">
+        <div class="form-box">
+          <h2 id="bookingHeading">Reservation Form</h2>
+          <p>Fields with a <span style="color: var(--orange);" aria-hidden="true">*</span> are required.</p>
+
+          <form id="bookingForm" novalidate aria-label="Table booking form">
+
+            <div class="form-group">
+              <label for="name">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" class="form-control"
+                     placeholder="e.g. Jane Smith" autocomplete="name"
+                     required aria-required="true" aria-describedby="nameErr" />
+              <span class="err-msg" id="nameErr" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-control"
+                     placeholder="e.g. jane@email.com" autocomplete="email"
+                     required aria-required="true" aria-describedby="emailErr" />
+              <span class="err-msg" id="emailErr" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control"
+                     placeholder="e.g. 07700 123456" autocomplete="tel"
+                     required aria-required="true" aria-describedby="phoneErr" />
+              <span class="err-msg" id="phoneErr" role="alert"></span>
+            </div>
+
+            <div class="two-col">
+              <div class="form-group">
+                <label for="date">Date <span class="req" aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" class="form-control"
+                       required aria-required="true" aria-describedby="dateErr" />
+                <span class="err-msg" id="dateErr" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="time">Time <span class="req" aria-hidden="true">*</span></label>
+                <select id="time" name="time" class="form-control"
+                        required aria-required="true" aria-describedby="timeErr">
+                  <option value="">Pick a time</option>
+                  <option value="09:00">9:00 AM</option>
+                  <option value="10:30">10:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="16:30">4:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                </select>
+                <span class="err-msg" id="timeErr" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="session">Session Type <span class="req" aria-hidden="true">*</span></label>
+              <select id="session" name="session" class="form-control"
+                      required aria-required="true" aria-describedby="sessionErr">
+                <option value="">Choose a session</option>
+                <option value="dropin">Drop-In (45 mins) - &pound;5 per person</option>
+                <option value="standard">Standard (90 mins) - &pound;8 per person</option>
+                <option value="premium">Premium (2.5 hours) - &pound;14 per person</option>
+              </select>
+              <span class="err-msg" id="sessionErr" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="visitors">Number of Visitors <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="visitors" name="visitors" class="form-control"
+                     placeholder="e.g. 2" min="1" max="20"
+                     required aria-required="true"
+                     aria-describedby="visitorsErr visitorsHint" />
+              <span id="visitorsHint" style="font-size: 0.78rem; color: var(--text-light); display: block; margin-top: 0.2rem;">
+                Maximum of 20 visitors per booking.
+              </span>
+              <span class="err-msg" id="visitorsErr" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="requirements">Special Requirements (optional)</label>
+              <textarea id="requirements" name="requirements" class="form-control" rows="3"
+                        placeholder="e.g. wheelchair access, birthday celebration, food allergies..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-primary"
+                    style="width: 100%; font-size: 1rem; padding: 0.75rem;">
+              Confirm Booking
+            </button>
+
+            <div class="success-box" id="successBox" role="alert" tabindex="-1">
+              <p style="font-size: 1.8rem; margin-bottom: 0.3rem;" aria-hidden="true">🎉</p>
+              <h3>Booking Received!</h3>
+              <p>Thanks! We will send a confirmation to your email within 24 hours. We cant wait to see you!</p>
+            </div>
+
+          </form>
+        </div>
+
+        <aside aria-label="Useful booking information">
+          <div class="info-box">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li>Monday to Friday: 9am - 7pm</li>
+              <li>Saturday: 9am - 8pm</li>
+              <li>Sunday: 10am - 6pm</li>
+              <li>Bank Holidays: 10am - 5pm</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h4>Session Prices</h4>
+            <ul>
+              <li>Drop-In (45 mins): &pound;5</li>
+              <li>Standard (90 mins): &pound;8</li>
+              <li>Premium (2.5 hrs): &pound;14</li>
+              <li>Children aged 4-12: half price</li>
+              <li>Under 4s: free entry</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h4>Finding Us</h4>
+            <ul>
+              <li>42 Whisker Lane, Manchester</li>
+              <li>5 mins walk from Piccadilly</li>
+              <li>NCP car park nearby</li>
+              <li>Phone: 0161 234 5678</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h4>Good to Know</h4>
+            <ul>
+              <li>Payment is taken on arrival</li>
+              <li>Cats may be resting - they need breaks too!</li>
+              <li>Please wash hands before entering cat area</li>
+              <li>No flash photography please</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" class="footer-logo" />
+        <p>Manchester's friendliest cat cafe. We support rescue cats and help them find loving homes.</p>
+        <p style="margin-top: 0.6rem;">
+           42 Whisker Lane, Manchester, M1 1WC<br>
+           0161 234 5678<br>
+           hello@whiskerscafe.co.uk
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cats-alt2.html">Our Cats</a></li>
+          <li><a href="menu-alt2.html">Menu &amp; Pricing</a></li>
+          <li><a href="gallery-alt2.html">Gallery</a></li>
+          <li><a href="booking-alt2.html">Book a Visit</a></li>
+          <li><a href="rules-alt2.html">Care &amp; Rules</a></li>
+          <li><a href="contact-alt2.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Monday - Friday: 9am to 7pm</li>
+          <li>Saturday: 9am to 8pm</li>
+          <li>Sunday: 10am to 6pm</li>
+          <li>Bank Holidays: 10am to 5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Whiskers Cafe. All rights reserved.</span>
+      <span>BTEC Level 3 Computing &mdash; Made by Illia</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="script-alt2.js"></script>
+</body>
+</html>

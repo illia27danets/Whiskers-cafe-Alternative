@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Whiskers Cafe</title>
+  <meta name="description" content="Browse photos of our cats, cafe and happy visitors at Whiskers Cafe in Manchester." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-alt2.css" />
+</head>
+<body>
+<button class="hamburger" id="hamburger" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <div class="sidebar-brand"><a href="index.html"><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" /></a><div class="sidebar-brand-name">Whiskers <span>Cafe</span></div><div class="sidebar-tagline">Coffee &bull; Cats &bull; Comfort</div></div>
+  <div class="sidebar-nav">
+    <a href="index.html"><span class="nav-dot"></span> Home</a>
+    <a href="cats-alt2.html"><span class="nav-dot"></span> Our Cats</a>
+    <a href="menu-alt2.html"><span class="nav-dot"></span> Menu &amp; Pricing</a>
+    <a href="gallery-alt2.html" class="active" aria-current="page"><span class="nav-dot"></span> Gallery</a>
+    <a href="rules-alt2.html"><span class="nav-dot"></span> Care &amp; Rules</a>
+    <a href="contact-alt2.html"><span class="nav-dot"></span> Contact</a>
+  </div>
+  <div class="sidebar-book"><a href="booking-alt2.html">Book a Visit</a></div>
+  <div class="sidebar-hours"><h5>Opening Hours</h5><p>Mon – Fri: 9am to 7pm</p><p>Saturday: 9am to 8pm</p><p>Sunday: 10am to 6pm</p></div>
+</nav>
+<div class="page-wrap">
+<main>
+  <header class="page-header">
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <p>A peek at life at Whiskers Cafe — our cats, our space, and our happy visitors.</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="galleryHeading">
+    <div class="container">
+      <h2 class="section-title" id="galleryHeading">Browse Our Photos</h2>
+      <p class="section-sub">Click any photo to view it full size</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter photos by category">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="cats">Our Cats</button>
+        <button class="filter-btn" data-filter="cafe">The Cafe</button>
+        <button class="filter-btn" data-filter="visitors">Visitors</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" role="list">
+        <div class="gallery-item" data-cat="cats" data-caption="Luna relaxing in the afternoon sun" role="listitem" tabindex="0" aria-label="Open photo: Luna relaxing in the afternoon sun"><img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=600&q=80" alt="Luna the British Shorthair cat sitting calmly" loading="lazy" /><div class="gallery-overlay"><span>Luna — British Shorthair</span></div></div>
+        <div class="gallery-item" data-cat="cats" data-caption="Mochi always getting into mischief" role="listitem" tabindex="0" aria-label="Open photo: Mochi always getting into mischief"><img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600&q=80" alt="Mochi the Ragdoll kitten looking curious" loading="lazy" /><div class="gallery-overlay"><span>Mochi — Ragdoll kitten</span></div></div>
+        <div class="gallery-item" data-cat="cafe" data-caption="Our cats love the comfy cafe chairs" role="listitem" tabindex="0" aria-label="Open photo: Our cats love the comfy cafe chairs"><img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=600&q=80" alt="A cat sitting comfortably on a cafe chair" loading="lazy" /><div class="gallery-overlay"><span>Cosy corners in the cafe</span></div></div>
+        <div class="gallery-item" data-cat="cats" data-caption="Simba — our big gentle giant" role="listitem" tabindex="0" aria-label="Open photo: Simba our big gentle giant"><img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?w=600&q=80" alt="Simba the Maine Coon cat sitting proudly" loading="lazy" /><div class="gallery-overlay"><span>Simba — Maine Coon</span></div></div>
+        <div class="gallery-item" data-cat="cats" data-caption="Oreo always ready for his close-up" role="listitem" tabindex="0" aria-label="Open photo: Oreo always ready for his close-up"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80" alt="Oreo the black and white cat looking at the camera" loading="lazy" /><div class="gallery-overlay"><span>Oreo — the poser</span></div></div>
+        <div class="gallery-item" data-cat="cafe" data-caption="Cleo checking out the new furniture" role="listitem" tabindex="0" aria-label="Open photo: Cleo checking out the new furniture"><img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=600&q=80" alt="Cleo the black cat exploring the cafe" loading="lazy" /><div class="gallery-overlay"><span>Cleo on the prowl</span></div></div>
+        <div class="gallery-item" data-cat="cats" data-caption="Poppy showing off her fluffy coat" role="listitem" tabindex="0" aria-label="Open photo: Poppy showing off her fluffy coat"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="Poppy the fluffy Persian mix cat" loading="lazy" /><div class="gallery-overlay"><span>Poppy — Persian mix</span></div></div>
+        <div class="gallery-item" data-cat="visitors" data-caption="Our visitors love making new furry friends" role="listitem" tabindex="0" aria-label="Open photo: Our visitors love making new furry friends"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=600&q=80" alt="A tortoiseshell cat curled up on a soft blanket" loading="lazy" /><div class="gallery-overlay"><span>A favourite snooze spot</span></div></div>
+        <div class="gallery-item" data-cat="cats" data-caption="Tiger enjoying his favourite sunny spot" role="listitem" tabindex="0" aria-label="Open photo: Tiger enjoying his favourite sunny spot"><img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?w=600&q=80" alt="Tiger the orange tabby cat resting in sunlight" loading="lazy" /><div class="gallery-overlay"><span>Tiger — sun worshipper</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-strip"><div class="container"><h2>Want to Visit in Person?</h2><p style="margin-bottom:1.2rem;">Book your table and come and meet our cats for yourself!</p><a href="booking-alt2.html" class="btn btn-white">Book a Visit</a></div></div>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox-close" id="lbClose" aria-label="Close photo">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <img class="lightbox-img" id="lbImg" src="" alt="" />
+  <p class="lightbox-caption" id="lbCaption"></p>
+  <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><img src="СafeLogoW.jpg" alt="Whiskers Cafe logo" class="footer-logo" /><p>Manchester's friendliest cat cafe. We support rescue cats and help them find loving homes.</p><p style="margin-top:0.6rem;">42 Whisker Lane, Manchester, M1 1WC<br>0161 234 5678<br>hello@whiskerscafe.co.uk</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="cats-alt2.html">Our Cats</a></li><li><a href="menu-alt2.html">Menu &amp; Pricing</a></li><li><a href="gallery-alt2.html">Gallery</a></li><li><a href="booking-alt2.html">Book a Visit</a></li><li><a href="rules-alt2.html">Care &amp; Rules</a></li><li><a href="contact-alt2.html">Contact</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul><li>Monday - Friday: 9am to 7pm</li><li>Saturday: 9am to 8pm</li><li>Sunday: 10am to 6pm</li><li>Bank Holidays: 10am to 5pm</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Whiskers Cafe. All rights reserved.</span><span>BTEC Level 3 Computing &mdash; Made by Illia</span></div>
+  </div>
+</footer>
+</div>
+<script src="script-alt.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var items = document.querySelectorAll('.gallery-item');
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+      items.forEach(function (item) {
+        if (filter === 'all' || item.getAttribute('data-cat') === filter) { item.classList.remove('hidden'); } else { item.classList.add('hidden'); }
+      });
+    });
+  });
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCaption'), lbClose = document.getElementById('lbClose'), lbPrev = document.getElementById('lbPrev'), lbNext = document.getElementById('lbNext'), current = 0, visible = [];
+  function getVisible() { return Array.from(items).filter(function (i) { return !i.classList.contains('hidden'); }); }
+  function openLightbox(index) { visible = getVisible(); current = index; var item = visible[current]; lbImg.src = item.querySelector('img').src; lbImg.alt = item.querySelector('img').alt; lbCap.textContent = item.getAttribute('data-caption'); lb.classList.add('open'); document.body.style.overflow = 'hidden'; lbClose.focus(); }
+  function closeLightbox() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  function showNext() { current = (current + 1) % visible.length; var item = visible[current]; lbImg.src = item.querySelector('img').src; lbImg.alt = item.querySelector('img').alt; lbCap.textContent = item.getAttribute('data-caption'); }
+  function showPrev() { current = (current - 1 + visible.length) % visible.length; var item = visible[current]; lbImg.src = item.querySelector('img').src; lbImg.alt = item.querySelector('img').alt; lbCap.textContent = item.getAttribute('data-caption'); }
+  items.forEach(function (item) { item.addEventListener('click', function () { visible = getVisible(); openLightbox(visible.indexOf(item)); }); item.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); } }); });
+  lbClose.addEventListener('click', closeLightbox); lbNext.addEventListener('click', showNext); lbPrev.addEventListener('click', showPrev);
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', function (e) { if (!lb.classList.contains('open')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowRight') showNext(); if (e.key === 'ArrowLeft') showPrev(); });
+});
+</script>
+</body>
+</html>
